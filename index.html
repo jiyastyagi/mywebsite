@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jiya Tyagi | Software Engineer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+
+--bg:#faf7f2;
+--paper:#fffdf9;
+--border:#ddd6cf;
+--text:#2e2e2e;
+--light:#666;
+--sage:#b9d6c3;
+--lav:#d8c8f2;
+--peach:#f8d7cb;
+--sky:#cde8f5;
+--yellow:#f6efc8;
+--shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:
+linear-gradient(#ece7df 1px,transparent 1px),
+linear-gradient(90deg,#ece7df 1px,transparent 1px);
+
+background-size:40px 40px;
+background-color:var(--bg);
+
+font-family:'Plus Jakarta Sans',sans-serif;
+
+color:var(--text);
+
+overflow-x:hidden;
+
+}
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#d8d2cb;
+border-radius:20px;
+}
+
+.container{
+
+max-width:1500px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:290px 1fr;
+
+min-height:100vh;
+
+}
+
+/* ==========================
+SIDEBAR
+=========================== */
+
+.sidebar{
+
+position:sticky;
+top:0;
+
+height:100vh;
+
+padding:60px 35px;
+
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+
+border-right:1px solid var(--border);
+
+background:rgba(255,255,255,.45);
+
+backdrop-filter:blur(14px);
+
+}
+
+.logo{
+
+font-family:'DM Serif Display',serif;
+
+font-size:42px;
+
+line-height:1;
+
+margin-bottom:15px;
+
+}
+
+.subtitle{
+
+font-size:15px;
+
+color:#666;
+
+margin-bottom:60px;
+
+}
+
+.sidebar h4{
+
+font-size:13px;
+
+letter-spacing:3px;
+
+margin-bottom:18px;
+
+color:#888;
+
+}
+
+.sidebar ul{
+
+list-style:none;
+
+}
+
+.sidebar li{
+
+margin-bottom:14px;
+
+font-size:15px;
+
+}
+
+.sidebar a{
+
+color:inherit;
+
+text-decoration:none;
+
+transition:.25s;
+
+}
+
+.sidebar a:hover{
+
+padding-left:10px;
+
+color:#000;
+
+}
+
+.signature{
+
+font-size:13px;
+
+color:#888;
+
+line-height:1.8;
+
+}
+
+/* ===================== */
+
+main{
+
+padding:80px;
+
+}
+
+/* HERO */
+
+.hero{
+
+display:grid;
+
+grid-template-columns:1.2fr .8fr;
+
+gap:60px;
+
+align-items:center;
+
+margin-bottom:120px;
+
+}
+
+.hero h1{
+
+font-family:'DM Serif Display',serif;
+
+font-size:78px;
+
+line-height:1;
+
+margin-bottom:18px;
+
+}
+
+.hero h2{
+
+font-size:22px;
+
+font-weight:500;
+
+margin-bottom:25px;
+
+color:#555;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+line-height:1.9;
+
+max-width:650px;
+
+color:#555;
+
+}
+
+.badges{
+
+display:flex;
+
+gap:12px;
+
+margin-top:40px;
+
+flex-wrap:wrap;
+
+}
+
+.badge{
+
+padding:12px 22px;
+
+border-radius:50px;
+
+font-size:14px;
+
+font-weight:600;
+
+}
+
+.sage{background:var(--sage);}
+.lav{background:var(--lav);}
+.sky{background:var(--sky);}
+.peach{background:var(--peach);}
+.yellow{background:var(--yellow);}
+
+.heroCard{
+
+background:var(--paper);
+
+padding:45px;
+
+border-radius:30px;
+
+box-shadow:var(--shadow);
+
+transform:rotate(-2deg);
+
+transition:.35s;
+
+}
+
+.heroCard:hover{
+
+transform:rotate(0deg) translateY(-10px);
+
+}
+
+.heroCard h3{
+
+font-family:'DM Serif Display';
+
+font-size:30px;
+
+margin-bottom:25px;
+
+}
+
+.heroCard p{
+
+font-size:15px;
+
+line-height:2;
+
+}
+
+/* section */
+
+.section{
+
+margin-bottom:110px;
+
+}
+
+.sectionTitle{
+
+font-family:'DM Serif Display';
+
+font-size:46px;
+
+margin-bottom:45px;
+
+position:relative;
+
+display:inline-block;
+
+}
+
+.sectionTitle:after{
+
+content:'';
+
+position:absolute;
+
+left:0;
+
+bottom:-8px;
+
+width:70%;
+
+height:4px;
+
+background:var(--sage);
+
+border-radius:30px;
+
+}
+
+/* ABOUT */
+
+.aboutGrid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:30px;
+
+}
+
+.note{
+
+background:var(--paper);
+
+padding:35px;
+
+border-radius:22px;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+}
+
+.note:hover{
+
+transform:translateY(-8px);
+
+}
+
+.note h3{
+
+margin-bottom:15px;
+
+font-size:22px;
+
+}
+
+.note ul{
+
+margin-left:18px;
+
+line-height:2;
+
+color:#555;
+
+}
+
+/* PROJECTS */
+
+.project{
+
+display:grid;
+
+grid-template-columns:220px 1fr;
+
+gap:35px;
+
+margin-bottom:40px;
+
+align-items:start;
+
+}
+
+.sticky{
+
+padding:28px;
+
+border-radius:18px;
+
+box-shadow:var(--shadow);
+
+transform:rotate(-2deg);
+
+transition:.3s;
+
+}
+
+.sticky:hover{
+
+transform:rotate(0deg) scale(1.03);
+
+}
+
+.projectContent{
+
+background:var(--paper);
+
+padding:35px;
+
+border-radius:22px;
+
+box-shadow:var(--shadow);
+
+}
+
+.projectContent h3{
+
+font-size:30px;
+
+margin-bottom:10px;
+
+}
+
+.tech{
+
+display:flex;
+
+gap:10px;
+
+flex-wrap:wrap;
+
+margin:18px 0 24px;
+
+}
+
+.tech span{
+
+padding:8px 16px;
+
+border-radius:40px;
+
+background:#f3f1ec;
+
+font-size:13px;
+
+}
+
+.projectContent ul{
+
+margin-left:18px;
+
+line-height:2;
+
+color:#555;
+
+}
+
+/* responsive */
+
+@media(max-width:1100px){
+
+.container{
+
+grid-template-columns:1fr;
+
+}
+
+.sidebar{
+
+position:relative;
+
+height:auto;
+
+border-right:none;
+
+border-bottom:1px solid var(--border);
+
+}
+
+.hero{
+
+grid-template-columns:1fr;
+
+}
+
+.aboutGrid{
+
+grid-template-columns:1fr;
+
+}
+
+.project{
+
+grid-template-columns:1fr;
+
+}
+
+main{
+
+padding:40px;
+
+}
+
+.hero h1{
+
+font-size:54px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<aside class="sidebar">
+
+<div>
+
+<div class="logo">JT</div>
+
+<div class="subtitle">
+Software Engineer<br>
+Building practical AI systems.
+</div>
+
+<h4>CONTACT</h4>
+
+<ul>
+
+<li>📧 jiyakimail@gmail.com</li>
+
+<li>📱 +91 9354000613</li>
+
+<li><a href="#">LinkedIn ↗</a></li>
+
+<li><a href="#">GitHub ↗</a></li>
+
+<li>Pune, India</li>
+
+</ul>
+
+</div>
+
+<div class="signature">
+
+Designed like a notebook.<br>
+
+Built with curiosity.
+
+</div>
+
+</aside>
+
+<main>
+
+<section class="hero">
+
+<div>
+
+<h1>Jiya Tyagi</h1>
+
+<h2>Software Engineer</h2>
+
+<p>
+
+I enjoy building software that solves practical problems—from AI-powered healthcare tools to adaptive learning assistants. My focus is writing clean, maintainable code while continuously learning new technologies and creating products that make everyday tasks simpler.
+
+</p>
+
+<div class="badges">
+
+<div class="badge sage">Open to SDE Roles</div>
+
+<div class="badge peach">AI</div>
+
+<div class="badge lav">Full Stack</div>
+
+<div class="badge sky">AWS</div>
+
+</div>
+
+</div>
+
+<div class="heroCard">
+
+<h3>Today's Thought</h3>
+
+<p>
+
+"Build software that helps people first. Technology follows."
+
+</p>
+
+<br>
+
+<p>
+
+Currently exploring:
+
+<br><br>
+
+• Artificial Intelligence
+
+<br>
+
+• Distributed Systems
+
+<br>
+
+• Cloud Computing
+
+<br>
+
+• Product Engineering
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="sectionTitle">About Me</h2>
+
+<div class="aboutGrid">
+
+<div class="note">
+
+<h3>Things I Enjoy</h3>
+
+<ul>
+
+<li>Building useful products</li>
+
+<li>Learning system design</li>
+
+<li>Open source</li>
+
+<li>Theatre & leadership</li>
+
+<li>Teaching children</li>
+
+</ul>
+
+</div>
+
+<div class="note">
+
+<h3>Currently Working On</h3>
+
+<ul>
+
+<li>Healthcare AI</li>
+
+<li>React Native</li>
+
+<li>FastAPI</li>
+
+<li>AWS deployment</li>
+
+<li>Generative AI</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="sectionTitle">Selected Projects</h2>
+
+<div class="project">
+
+<div class="sticky sage">
+
+<h3>Jeevan</h3>
+
+<p>
+
+AI Healthcare
+
+</p>
+
+</div>
+
+<div class="projectContent">
+
+<h3>AI Powered Healthcare Record Manager</h3>
+
+<div class="tech">
+
+<span>React Native</span>
+
+<span>FastAPI</span>
+
+<span>AWS</span>
+
+<span>OCR</span>
+
+<span>NLP</span>
+
+<span>Firebase</span>
+
+<span>PostgreSQL</span>
+
+</div>
+
+<ul>
+
+<li>Built an AI-assisted healthcare app capable of extracting handwritten prescription details with high accuracy.</li>
+
+<li>Integrated medicine reminders, appointment scheduling and Health Connect APIs.</li>
+
+<li>Designed a human-in-the-loop verification workflow to improve reliability.</li>
+
+</ul>
+
+</div>
+
+</div>
+<div class="project">
+
+<div class="sticky peach">
+
+<h3>Symbi.AI</h3>
+
+<p>Education AI</p>
+
+</div>
+
+<div class="projectContent">
+
+<h3>AI Powered Student Learning Assistant</h3>
+
+<div class="tech">
+
+<span>Python</span>
+
+<span>Flask</span>
+
+<span>Streamlit</span>
+
+<span>Generative AI</span>
+
+<span>NLP</span>
+
+</div>
+
+<ul>
+
+<li>Designed an adaptive hint-generation system instead of directly revealing answers.</li>
+
+<li>Built an interactive Streamlit platform for real-time exercises and feedback.</li>
+
+<li>Encouraged independent problem-solving while improving student engagement.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<div class="sticky sky">
+
+<h3>Sports</h3>
+
+<p>Management</p>
+
+</div>
+
+<div class="projectContent">
+
+<h3>Sports Management System</h3>
+
+<div class="tech">
+
+<span>Java</span>
+
+<span>JDBC</span>
+
+<span>MySQL</span>
+
+<span>Java Swing</span>
+
+</div>
+
+<ul>
+
+<li>Desktop application for managing teams, players and fixtures.</li>
+
+<li>Implemented complete CRUD operations backed by MySQL.</li>
+
+<li>Reduced manual scheduling efforts through automation.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="sectionTitle">Skills</h2>
+
+<div class="aboutGrid">
+
+<div class="note">
+
+<h3>Languages</h3>
+
+<div class="tech">
+
+<span>C/C++</span>
+
+<span>Python</span>
+
+<span>JavaScript</span>
+
+<span>SQL</span>
+
+</div>
+
+<h3 style="margin-top:30px;">Frontend</h3>
+
+<div class="tech">
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+<span>React</span>
+
+<span>Tailwind</span>
+
+</div>
+
+</div>
+
+<div class="note">
+
+<h3>Backend</h3>
+
+<div class="tech">
+
+<span>Node.js</span>
+
+<span>Express</span>
+
+<span>REST APIs</span>
+
+<span>FastAPI</span>
+
+</div>
+
+<h3 style="margin-top:30px;">Cloud & Database</h3>
+
+<div class="tech">
+
+<span>AWS</span>
+
+<span>MongoDB</span>
+
+<span>PostgreSQL</span>
+
+<span>Firebase</span>
+
+<span>MySQL</span>
+
+<span>Render</span>
+
+<span>Vercel</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="sectionTitle">Education</h2>
+
+<div class="note">
+
+<h3>B.Tech Computer Science & Engineering</h3>
+
+<p>
+
+Symbiosis Institute of Technology
+
+<br><br>
+
+CGPA: <strong>8.3</strong>
+
+<br>
+
+2023 – 2027
+
+</p>
+
+<hr style="margin:30px 0;border:none;border-top:1px solid #eee;">
+
+<h3>Higher Secondary</h3>
+
+<p>
+
+Delhi Public School Ghaziabad
+
+<br>
+
+91%
+
+</p>
+
+<hr style="margin:30px 0;border:none;border-top:1px solid #eee;">
+
+<h3>Secondary</h3>
+
+<p>
+
+Delhi Public School Ghaziabad
+
+<br>
+
+94.8%
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="sectionTitle">Leadership</h2>
+
+<div class="aboutGrid">
+
+<div class="note">
+
+<h3>🎭 President</h3>
+
+<p>
+
+MOSAIC, SIT
+
+<br><br>
+
+Leading creative initiatives, mentoring members and organising college-wide productions.
+
+</p>
+
+</div>
+
+<div class="note">
+
+<h3>❤️ Volunteer Teacher</h3>
+
+<p>
+
+Sevadeep
+
+<br><br>
+
+Conducted weekly sessions for underprivileged children, helping improve literacy and academic confidence.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="sectionTitle">Let's Connect</h2>
+
+<div class="heroCard" style="transform:none;">
+
+<h3>Thanks for visiting.</h3>
+
+<p>
+
+I'm always excited to discuss software engineering, AI, full-stack development or simply exchange ideas over coffee.
+
+<br><br>
+
+📧 jiyakimail@gmail.com
+
+<br>
+
+📱 +91 9354000613
+
+<br>
+
+💼 LinkedIn
+
+<br>
+
+💻 GitHub
+
+</p>
+
+</div>
+
+</section>
+
+<footer style="text-align:center;padding:80px 0;color:#777;">
+
+Built with HTML, CSS & curiosity.
+
+</footer>
+
+</main>
+
+</div>
+
+<script>
+
+const cards=document.querySelectorAll('.note,.projectContent,.sticky,.heroCard');
+
+cards.forEach(card=>{
+
+card.addEventListener('mousemove',e=>{
+
+const rect=card.getBoundingClientRect();
+
+const x=e.clientX-rect.left;
+
+const y=e.clientY-rect.top;
+
+card.style.background=
+`radial-gradient(circle at ${x}px ${y}px,
+rgba(255,255,255,.95),
+rgba(255,253,249,1) 60%)`;
+
+});
+
+card.addEventListener('mouseleave',()=>{
+
+card.style.background='var(--paper)';
+
+});
+
+});
+
+const sections=document.querySelectorAll('.section');
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.animate([
+
+{
+
+opacity:0,
+
+transform:'translateY(60px)'
+
+},
+
+{
+
+opacity:1,
+
+transform:'translateY(0px)'
+
+}
+
+],{
+
+duration:700,
+
+fill:'forwards',
+
+easing:'ease'
+
+});
+
+}
+
+});
+
+},{threshold:.2});
+
+sections.forEach(section=>observer.observe(section));
+
+const progress=document.createElement('div');
+
+progress.style.position='fixed';
+
+progress.style.top='0';
+
+progress.style.left='0';
+
+progress.style.height='5px';
+
+progress.style.background='#b9d6c3';
+
+progress.style.zIndex='9999';
+
+document.body.appendChild(progress);
+
+window.addEventListener('scroll',()=>{
+
+const h=document.documentElement;
+
+const scrolled=h.scrollTop;
+
+const height=h.scrollHeight-h.clientHeight;
+
+progress.style.width=(scrolled/height)*100+'%';
+
+});
+
+</script>
+
+</body>
+
+</html>
